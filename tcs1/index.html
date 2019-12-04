@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <script src="../tcs1/demo.js"></script>
+    <style type="text/css">
+        .main{
+            height:650px;
+            width:1400px;
+            position:relative;
+            background-image:url('../tcs1/img/bgp.jpg');
+            background-size: 100% 100%;
+        }
+        .jianjie{
+            width: 700px;
+            line-height:20px;
+            color: #b21f2d;
+            font-size:20px;
+            font-weight:bolder;
+            padding-top: 20px;
+            padding-left: 20px;
+            float: left;
+        }
+        .jtittle{
+            line-height:20px;
+            color: #0b0b0b;
+            font-size:40px;
+            font-weight:bolder;
+            padding-top: 5px;
+            padding-left: 70px;
+        }
+        .startbtn {
+            width: 700px;
+            float: left;
+            background-size:100% 100%;
+            padding-left: 1000px;
+            padding-top: 20px;
+            margin:auto;
+        }
+        #hh{
+
+            color: #0b0b0b;
+            font-size:20px;
+
+        }
+        .btn1 {
+            color: #fff;
+            background-color: #FF5A44;
+            border-color: #FF5A44;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            function click() {
+                var bt1= document.getElementById("btn1");
+                bt1.onclick=function () {
+                    bt1.setAttribute("sd",200);
+                    window.location.href="one/tcs.html";
+                }
+                var bt2= document.getElementById("btn2");
+                bt2.onclick=function () {
+                    bt2.setAttribute("sd",100);
+                    window.location.href="two/tcs.html";
+                }
+                var bt3= document.getElementById("btn3");
+                bt3.onclick=function () {
+                    bt3.setAttribute("sd",80);
+                    window.location.href="three/tcs.html";
+                }
+            }
+            click();
+
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+        <div class="startbtn" id="hh"><button  id="btn1" class="btn1" value="200"
+                                              >普通模式</button>
+        </div>
+        <div class="startbtn" id="hh"><button  id="btn2" class="btn1" value="100"
+                                              >困难模式</button>
+         </div>
+        <div class="startbtn" id="hh"><button id="btn3" class="btn1" value="50"
+                                              >地狱模式</button>
+        </div>
+    <div class="jianjie">
+        <p class="jtittle">游戏简介</p>
+        <p>这款贪吃蛇游戏由html、css、js编写，</p>
+        <p>游戏玩法简单上手快。</p>
+        <p>用游戏把子上下左右控制蛇的方向，</p>
+        <p>寻找吃的东西，每吃一口就能得到一定</p>
+        <p>的积分，而且蛇的身子会越吃越长，身</p>
+        <p>子越长玩的难度就越大，不能碰墙，不</p>
+        <p>能咬到自己的身体，更不能咬自己的尾</p>
+        <p>巴，等到了一定的分数，就能过关，然</p>
+        <p>后继续玩下一关。</p>
+    </div>
+
+</div>
+</body>
+</html>
+
